@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install Sigil on Linux Mint</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #f5f3ff;
+    background: radial-gradient(1200px 700px at 20% 0%, #241b4d 0%, #0d0a16 55%, #08060d 100%);
+  }
+  main { width: min(760px, 92vw); padding: 48px 0; }
+  .mark {
+    width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center;
+    background: linear-gradient(145deg, #8b5cf6, #4c1d95); font-weight: 800; font-size: 30px;
+    box-shadow: 0 10px 40px #6d28d955;
+  }
+  h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; margin: 24px 0 12px; letter-spacing: -0.03em; }
+  p.lead { color: #c4b5fd; font-size: 18px; line-height: 1.6; margin: 0 0 28px; }
+  .install {
+    display: inline-flex; flex-direction: column; gap: 4px; text-decoration: none;
+    padding: 18px 26px; border-radius: 14px; background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white; font-weight: 700; font-size: 19px; box-shadow: 0 12px 40px #7c3aed44;
+  }
+  .install small { font-weight: 500; opacity: .85; font-size: 13px; }
+  .install:hover { filter: brightness(1.08); }
+  .links { margin-top: 16px; color: #a78bfa; font-size: 14px; }
+  .links a { color: #ddd6fe; text-decoration: none; border-bottom: 1px solid #7c3aed66; }
+  .card {
+    margin-top: 34px; padding: 22px 24px; border-radius: 16px;
+    background: #ffffff08; border: 1px solid #ffffff12;
+  }
+  h2 { font-size: 16px; margin: 0 0 12px; color: #ede9fe; }
+  ol { margin: 0; padding-left: 22px; color: #d8d2e8; line-height: 1.9; }
+  code {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 13px;
+    background: #00000055; padding: 2px 6px; border-radius: 6px; color: #e9d5ff;
+  }
+  .hash { margin-top: 18px; font-size: 12px; color: #8b83a3; word-break: break-all; }
+  .muted { color: #9d94b5; font-size: 13px; line-height: 1.7; margin-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">S</div>
+  <h1>Sigil for Linux Mint</h1>
+  <p class="lead">One download. One installer. Your personal AI operator, native in Mint and Debian.</p>
+
+  <a class="install" href="https://github.com/Konfusi0n/sigil-linux-releases/releases/download/v0.6.9.5-linux.1/Install-Sigil-0.6.9.5-Linux-Mint.deb">
+    Download Sigil 0.6.9.5
+    <small>Debian package · 146 MB · Linux Mint 21+ / Debian 12+</small>
+  </a>
+  <div class="links">
+    Mirror: <a href="https://gofile.io/d/rHOdLVf6">gofile.io/d/rHOdLVf6</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/Konfusi0n/sigil-linux-releases/releases/tag/v0.6.9.5-linux.1">checksums and verification</a>
+  </div>
+
+  <div class="card">
+    <h2>Install</h2>
+    <ol>
+      <li>Open the downloaded <code>.deb</code> and choose <strong>Install</strong>.</li>
+      <li>Launch <strong>Sigil</strong> from the application menu.</li>
+      <li>Check it with <code>sigil-ai setup status --json</code>.</li>
+    </ol>
+  </div>
+
+  <p class="hash">SHA-256 · 4f2a956490a20fd367613b5b248c2471bea30a077ec41411d9fcc9d090c28b6f</p>
+  <p class="muted">
+    Includes the patched Sigil engine, operator harness, private Python runtime and
+    DonSeTch 5.1.2. No system Python, Node, Bun, Git or WSL required. Package name is
+    <code>sigil-operator</code>; Debian's unrelated EPUB editor is left untouched.
+    Engineering candidate, unsigned; verify the SHA-256 above for byte-level assurance.
+  </p>
+</main>
+</body>
+</html>
