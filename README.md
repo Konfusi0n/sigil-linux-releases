@@ -6,6 +6,8 @@ data, or private notes belong in this repository.
 
 ## Download — Sigil 0.6.9.5 for Linux Mint / Debian
 
+**One-click page:** https://konfusi0n.github.io/sigil-linux-releases/
+
 **Direct installer link**
 
 https://github.com/Konfusi0n/sigil-linux-releases/releases/download/v0.6.9.5-linux.1/Install-Sigil-0.6.9.5-Linux-Mint.deb
